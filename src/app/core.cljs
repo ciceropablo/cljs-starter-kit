@@ -12,7 +12,7 @@
 
 (defn render
   []
-  (r/render [view/show] (js/document.getElementById "root")))
+  (r/render [view/show] (.getElementById js/document "root")))
 
 (defn init
   []
